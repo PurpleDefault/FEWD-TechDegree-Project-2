@@ -112,3 +112,60 @@ footer p a {
   justify-content: space-between;
   flex-direction: row;
 }
+
+#footer_nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .portfolio_items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 50%;
+  }
+
+  #nav {
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+  }
+
+  #header {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .user_bio {
+    flex-basis: 70%;
+  }
+
+  .user_img {
+    padding-top: 0;
+  }
+
+  #contact p {
+    font-size: 1.25rem;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+
+  #back_to_top {
+    display: none;
+  }
+
+  #footer_nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer_nav li {
+    padding: 0.25rem;
+  }
+}
