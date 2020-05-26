@@ -11,6 +11,19 @@ html {
 
 /* MAIN STYLES */
 
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 0.75rem;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -30,13 +43,7 @@ nav {
 }
 
 li {
-  text-align: center;
-  border-radius: 0.5rem;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
   width: 100%;
-  background-color: #FFFFFF;
-  padding: 0.75rem;
 }
 
 h1, h2 {
@@ -94,6 +101,11 @@ footer {
   padding: 1.75rem 0 1.75rem 0;
   border-top: 1px solid #4A4A4A;
   font-weight: bold;
+}
+
+footer p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer_flex {
