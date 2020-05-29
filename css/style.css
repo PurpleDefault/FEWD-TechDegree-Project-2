@@ -132,7 +132,11 @@ img {
   width: 100%;
 }
 
-.contact {
+.skills div {
+  padding: 0 2.5rem 1rem 2.5rem;
+}
+
+.contact, .skills {
   background-color: #fff;
   padding-bottom: 1.75rem;
   border-radius: 0.5rem;
@@ -174,6 +178,7 @@ footer {
 
   #header {
     flex-direction: row-reverse;
+    justify-content: space-around;
   }
 
   .user_bio {
@@ -216,6 +221,10 @@ footer {
     margin-right: 0;
   }
 
+  .skills div {
+    padding: 0 5.5rem 1rem 5.5rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -237,7 +246,15 @@ footer {
     margin-right: 0rem;
   }
 
+  .user_bio {
+    flex-basis: 50%;
+  }
+
   .user_bio p {
     text-align: left;
+  }
+
+  .skills div {
+    padding: 0 9.5rem 1rem 9.5rem;
   }
 }
