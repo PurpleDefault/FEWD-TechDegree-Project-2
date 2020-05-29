@@ -20,16 +20,9 @@ body {
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.row {
-  flex-direction: row;
-}
-
-.column {
+#home, #nav, #header, #items {
   flex-direction: column;
 }
 
@@ -127,8 +120,12 @@ main h2 {
   text-align: center;
 }
 
-.card p, .card h3 {
-  padding: 1.25rem;
+.card h3 {
+  padding: 1rem;
+}
+
+.card p {
+  padding: 0rem 2rem 2rem 2rem;
 }
 
 img {
@@ -137,12 +134,13 @@ img {
 
 .contact {
   background-color: #fff;
+  padding-bottom: 1.75rem;
   border-radius: 0.5rem;
   border-bottom: 6px solid skyblue;
 }
 
 .contact p {
-  padding-bottom: 1.25rem;
+  padding: 0.5rem 2.75rem 0.5rem 2.75rem;
 }
 
 footer {
@@ -162,8 +160,84 @@ footer {
 
 @media (min-width: 768px) {
 
+  #nav {
+    flex-direction: row;
+  }
+
+  #nav li {
+    margin-right: 1rem;
+  }
+
+  #nav li:last-child {
+    margin: 0;
+  }
+
+  #header {
+    flex-direction: row-reverse;
+  }
+
+  .user_bio {
+    flex-basis: 75%;
+  }
+
+  .user_bio p {
+    padding: 0rem 2rem 1rem 1rem;
+  }
+
+  #items {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 45%;
+    margin-right: 1.25rem;
+  }
+
+  .second {
+    margin-right: 0;
+  }
+
+  #back_to_top {
+    display: none;
+  }
+
+  #footer_nav {
+    display: flex;
+  }
+
+  #footer_nav li {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #footer_nav li:last-child {
+    margin-right: 0;
+  }
+
 }
 
 @media (min-width: 1024px) {
+  #home {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  #nav {
+    flex-basis: 60%;
+  }
+
+  .card {
+    flex-basis: 30%;
+    margin-right: 1rem;
+  }
+
+  .third {
+    margin-right: 0rem;
+  }
+
+  .user_bio p {
+    text-align: left;
+  }
 }
